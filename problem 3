@@ -4,20 +4,20 @@ using namespace std;
 class Area
 {
 public:
-    static void print_area(int l, int b)
+    void area(int l, int b)
     {
-        cout << l*b << endl;
+        cout<<"Area of Rectangle is = "<<l*b<<endl;
     }
 
-    static void print_area(int s)
+    void area(int a)
     {
-        cout << s*s << endl;
+        cout<<"Area of Square is = "<<a*a<< endl;
     }
 };
 
 int main()
 {
-    Area::print_area(7);
-    Area::print_area(7,8);
-    return 0;
-}                           
+    Area obj;
+    obj.area(10,20);
+    obj.area(5);
+}
