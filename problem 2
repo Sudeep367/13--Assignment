@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class programming
+{
+    string name;
+public:
+    programming(string s)
+    {
+        name = s;
+    }
+    programming()
+    {
+        name = "Programming";
+    }
+    void print_name()
+    {
+        cout <<"I love "<< name << endl;
+    }
+};
+
+int main()
+{
+    programming s1("cpp");
+    programming s2;
+    s1.print_name();
+    s2.print_name();
+    return 0;
+}   
